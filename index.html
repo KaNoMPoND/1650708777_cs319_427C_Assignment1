@@ -78,30 +78,53 @@
 <section id="projects" class="section container">
 <h2 class="section-title">เกียรติบัตร</h2>
 <div class="grid projects-grid">
-<!-- Project Card 1 -->
+<!-- Certificate Card 1 -->
 <article class="card">
-<img src="assets/project1.jpg" alt="ภาพโปรเจกต์ 1" class="card-img" />
+<img src="assets\10.png" alt="ภาพโปรเจกต์ 1" class="card-img" />
 <div class="card-body">
 <h3 class="card-title">BU-ITI COMPETITION 2025</h3>
 <p class="card-text">เข้าร่วมการแข่งขัน Capture the flag ณ ตึง A3 Diamon Hall มหาวิทยาลัยกรุงเทพ </p>
 <div class="card-actions">
-<a href="#" class="btn small">ดูรายละเอียด</a>
+<a href="#p1" class="btn small">ดูรายละเอียด</a>
 </div>
 </div>
 </article>
-<!-- Project Card 2 -->
+<!-- Certificate Card 2 -->
 <article class="card">
-<img src="assets/project2.jpg" alt="ภาพโปรเจกต์ 2" class="card-img" />
+<img src="assets\image.png" alt="ภาพโปรเจกต์ 2" class="card-img" />
 <div class="card-body">
 <h3 class="card-title">Basic Cybersecurity Learning Online Platform</h3>
 <p class="card-text">ผ่านการอบรมณ์ออนไลน์กับสกมช.ผ่านเว็บไซต์ MOOC</p>
 <div class="card-actions">
-<a href="#" class="btn small">ดูรายละเอียด</a>
+<a href="#p2" class="btn small">ดูรายละเอียด</a>
 </div>
 </div>
 </article>
 </div>
 </section>
+
+<!-- Modal โปรเจกต์ 1 -->
+<div id="p1" class="modal" aria-hidden="true">
+  <a href="#" class="modal__overlay" aria-label="ปิด"></a>
+  <div class="modal__content" role="dialog" aria-modal="true" aria-labelledby="p1-title">
+    <button class="modal__close" aria-label="ปิด" onclick="location.hash='#'">✕</button>
+    <h3 id="p1-title" class="modal__title">BU-ITI COMPETITION 2025</h3>
+    <img src="./assets/10.png" alt="ภาพโปรเจกต์ 1 ขนาดใหญ่">
+    <p class="modal__caption">เข้าร่วมการแข่งขัน Capture the Flag ณ A3 Diamond Hall</p>
+  </div>
+</div>
+
+<!-- Modal โปรเจกต์ 2 -->
+<div id="p2" class="modal" aria-hidden="true">
+  <a href="#" class="modal__overlay" aria-label="ปิด"></a>
+  <div class="modal__content" role="dialog" aria-modal="true" aria-labelledby="p2-title">
+    <button class="modal__close" aria-label="ปิด" onclick="location.hash='#'">✕</button>
+    <h3 id="p2-title" class="modal__title">Basic Cybersecurity Learning</h3>
+    <img src="./assets/image.png" alt="ภาพโปรเจกต์ 2 ขนาดใหญ่">
+    <p class="modal__caption">ผ่านการอบรมออนไลน์ด้านความปลอดภัยไซเบอร์</p>
+  </div>
+</div>
+
 
 
 <!-- =================== Contact =================== -->

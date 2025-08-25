@@ -63,6 +63,47 @@ img { max-width: 100%; display: block; }
 .card-text { color: var(--muted); }
 .card-actions { display: flex; gap: 10px; margin-top: 6px; }
 
+/* ===== Modal (CSS-only, ใช้ :target) ===== */
+.modal { position: fixed; inset: 0; display: none; z-index: 80; }
+.modal:target { display: block; }
+
+.modal__overlay {
+  position: absolute; inset: 0;
+  background: rgba(0,0,0,.6);
+  backdrop-filter: blur(2px);
+  display: block;
+}
+
+.modal__content {
+  position: relative;
+  max-width: min(920px, 92vw);
+  margin: 6vh auto 0;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 20px 60px rgba(0,0,0,.5);
+}
+.modal__title { font-size: 1.2rem; font-weight: 700; }
+.modal__caption { color: var(--muted); margin-top: 8px; }
+.modal__content img {
+  width: 100%; height: auto; display: block;
+  border-radius: 10px; border: 1px solid var(--border);
+  margin-top: 10px;
+}
+
+.modal__close {
+  position: absolute; right: 10px; top: 10px;
+  border: 1px solid var(--border);
+  background: #0d131b; color: var(--text);
+  border-radius: 8px; padding: 6px 10px; cursor: pointer;
+}
+.modal__close:hover { filter: brightness(1.08); }
+
+/* (ออปชัน) ล็อกการสกอลล์เมื่อโมดัลเปิด — ใช้ได้ใน Chrome/Edge/Safari ใหม่ ๆ */
+:root:has(.modal:target) { overflow: hidden; }
+
+
 /* -------------------- Contact -------------------- */
 .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
 .contact-form { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 16px; display: grid; gap: 12px; }
